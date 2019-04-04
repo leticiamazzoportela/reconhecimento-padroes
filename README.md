@@ -9,9 +9,15 @@ A base de dados utilizada foi a [EEG Database Data Set](https://archive.ics.uci.
     ```
     virtualenv -p python3.7 .
     source ./bin/activate
-    cd src && jupyter notebook
     ```
 3. Instale as dependências necessárias no ambiente virtual
+    ```
+    pip install numpy scipy matplotlib scikit-learn jupyter mne
+    ```
+4. Inicie o jupyter
+    ```
+    cd src && jupyter notebook
+    ```
 
 6 funcoes
 10 trials p/ cada funcao
