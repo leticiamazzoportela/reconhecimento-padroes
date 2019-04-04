@@ -1,7 +1,7 @@
 # Processamento de sinais biológicos
 ## Descrição
-Repositório destinado aos projetos da disciplina de Reconhecimento de Padrões.
-A base de dados utilizada foi a [EEG Database Data Set](https://archive.ics.uci.edu/ml/datasets/EEG+Database)
+Repositório destinado aos projetos da disciplina de Reconhecimento de Padrões, cujo foco é o processamento de sinais biológicos.
+Para as análises, foi utilizada a base de dados [EEG Database Data Set](https://archive.ics.uci.edu/ml/datasets/EEG+Database)
 
 ## Instruções
 1. Faça o clone deste repositório
