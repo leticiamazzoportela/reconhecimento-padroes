@@ -1,4 +1,4 @@
-# Reconhecimento de Padrões
+# Processamento de sinais biológicos
 ## Descrição
 Repositório destinado aos projetos da disciplina de Reconhecimento de Padrões.
 A base de dados utilizada foi a [EEG Database Data Set](https://archive.ics.uci.edu/ml/datasets/EEG+Database)
