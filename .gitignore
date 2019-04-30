@@ -5,3 +5,4 @@ lib
 share
 src/dataset
 src/dataset_csv
+src/dataset_ssvep
