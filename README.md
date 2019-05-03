@@ -18,8 +18,3 @@ Para as análises, foi utilizada a base de dados [EEG Database Data Set](https:/
     ```
     cd src && jupyter notebook
     ```
-
-6 funcoes
-10 trials p/ cada funcao
-64 canais de eletrodos p/ cada trial
-256 0 a 255 milivolt p/ cada canal
