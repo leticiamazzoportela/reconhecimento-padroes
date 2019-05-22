@@ -12,7 +12,7 @@ Para as análises, foi utilizada a base de dados [EEG Database Data Set](https:/
     ```
 3. Instale as dependências necessárias no ambiente virtual
     ```
-    pip install numpy scipy matplotlib scikit-learn jupyter mne
+    pip install numpy scipy matplotlib scikit-learn jupyter mne keras pandas
     ```
 4. Inicie o jupyter
     ```
