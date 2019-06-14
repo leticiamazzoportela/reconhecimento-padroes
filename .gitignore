@@ -3,9 +3,9 @@ bin
 include
 lib
 share
+etc
 src/dataset
 src/dataset_csv
 src/dataset_ssvep
 src/.ipynb_checkpoints
-etc
 src/lib64
