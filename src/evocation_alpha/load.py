@@ -1,7 +1,8 @@
-# %matplotlib inline
+%matplotlib inline
 
-# import matplotlib.pyplot as plt
-# import mne
+import matplotlib.pyplot as plt
+import mne
+import numpy as np
 
 def load_data(file):
     with open(file, 'r') as f:
@@ -19,10 +20,10 @@ def convert(data):
     line = data.split(',')
 
     for e in range(len(line)):
-        if e <= 6:
+        if e > 0 and e <= 6:
             temp.append(float(line[e]))
-        if e == 12:
-            temp.append(line[e].split('\n')[0].strip())
+#         if e == 12:
+#             temp.append(line[e].split('\n')[0].strip())
     
     return temp
 
@@ -49,19 +50,15 @@ def separate_data(data):
 data = load_data('dataset_alpha/RAW_00.txt')
 newData = separate_data(data)
 
-# def sem_nome(data):
-#     newData = np.asarray(data)
-    
-#     ch_names = ['PO3', 'PO4', 'P8', 'O1', 'O2', 'P7']
-#     ch_types = ['eeg'] * 6
+def sem_nome(data):
+    newData = np.asarray(data)
+    newData = newData.T
+    ch_names = ['PO3', 'PO4', 'P8', 'O1', 'O2', 'P7']
+    ch_types = ['eeg'] * 6
 
-#     info = mne.create_info(ch_names=ch_names, sfreq=256, ch_types=ch_types)
-#     raw = mne.io.RawArray(newData, info)
+    info = mne.create_info(ch_names=ch_names, sfreq=256, ch_types=ch_types)
+    raw = mne.io.RawArray(newData, info)
 
-#     plt.plot(np.linspace(0, len(data), len(data)*256), raw.get_data()[0]) #eletrodo index 0
-#     plt.xlabel('tempo (s)')
-#     plt.ylabel('Dados EEG (mV/cm²)')
+    raw.plot_psd()
 
-#     raw.plot_psd
-
-# sem_nome(newData)
+sem_nome(newData)
